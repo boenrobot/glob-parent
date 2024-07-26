@@ -2,7 +2,7 @@
 
 var gp = require('../');
 var expect = require('expect');
-var isWin32 = require('os').platform() === 'win32';
+var isWin32 = require('node:os').platform() === 'win32';
 
 describe('glob-parent', function () {
   it('should strip glob magic to return parent path', function (done) {

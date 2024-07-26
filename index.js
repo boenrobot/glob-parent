@@ -1,8 +1,8 @@
 'use strict';
 
 var isGlob = require('is-glob');
-var pathPosixDirname = require('path').posix.dirname;
-var isWin32 = require('os').platform() === 'win32';
+var pathPosixDirname = require('node:path').posix.dirname;
+var isWin32 = require('node:os').platform() === 'win32';
 
 var slash = '/';
 var backslash = /\\/g;
